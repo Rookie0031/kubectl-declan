@@ -4,6 +4,8 @@ import (
 	"context"
 	"fmt"
 	"log"
+	"os"
+	"path/filepath"
 	"strings"
 
 	"github.com/spf13/cobra"
@@ -111,8 +113,17 @@ var deleteEmptyNamespacesCmd = &cobra.Command{
 	Use:   "ns-clean",
 	Short: "List or delete all namespaces that have no Pods and Services",
 	Run: func(cmd *cobra.Command, args []string) {
+		// Get kubeconfig path from environment variable or use default
+		kubeconfig := os.Getenv("KUBECONFIG")
+		if kubeconfig == "" {
+			homeDir, err := os.UserHomeDir()
+			if err != nil {
+				log.Fatalf("Error getting user home directory: %v", err)
+			}
+			kubeconfig = filepath.Join(homeDir, ".kube", "config")
+		}
 		// Initialize Kubernetes client
-		config, err := clientcmd.BuildConfigFromFlags("", "/Users/declan/.kube/config")
+		config, err := clientcmd.BuildConfigFromFlags("", kubeconfig)
 		if err != nil {
 			log.Fatalf("Error building kubeconfig: %s", err.Error())
 		}

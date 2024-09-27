@@ -1,8 +1,0 @@
-e01c891d5e7ed5c1c882fca895bb28232c44b7126147a41c04426626ba703587  go-cli_0.1.0_darwin_amd64.tar.gz
-af569ee1b2e5926e0fb61d2062a985cf47415c254df6096f58fcbfeeca54afd8  go-cli_0.1.0_darwin_arm64.tar.gz
-a703faeddc21a7d9a927b0a764c202a99f72d27b15d680979372c8026b7f29f5  go-cli_0.1.0_linux_386.tar.gz
-2f084e6cf18e7b14ad0efe3a1f4487e5d5580b72704cb8cf5ecc76cfd437e86e  go-cli_0.1.0_linux_amd64.tar.gz
-da00ef30c79d8652866f71fe6f96b740165f7dcbdd7acdaf07810c7182b44987  go-cli_0.1.0_linux_arm64.tar.gz
-ebf1ab4e85415aad8b6f87005f902634ace73f07b333c3061eec3a4225e5eff9  go-cli_0.1.0_windows_386.tar.gz
-6858b34838f8097debd937b0f762c27cce008cc4b62db84ac6de76f79c365c93  go-cli_0.1.0_windows_amd64.tar.gz
-dc78a5bb0cc887bb1b4bca00ce01f6468c1dbd00fb0049237c592ac340b8e6a9  go-cli_0.1.0_windows_arm64.tar.gz

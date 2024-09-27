@@ -15,9 +15,10 @@ Supports a dry-run mode for safe checking
 Follow the installation guide below
 
 ```
-curl -LO https://github.com/Rookie0031/kubectl-declan/releases/tag/v0.1.0/declan-ns-cleaner_0.1.0_darwin_arm64.tar.gz
-chmod +x declan-ns-cleaner_0.1.0_darwin_arm64.tar.gz
-sudo mv declan-ns-cleaner_0.1.0_darwin_arm64.tar.gz /usr/local/bin/kubectl-declan
+curl -LO https://github.com/Rookie0031/kubectl-declan/releases/download/v0.1.0/declan-ns-cleaner_0.1.0_darwin_arm64.tar.gz
+tar -xzf declan-ns-cleaner_0.1.0_darwin_arm64.tar.gz
+chmod +x go-cli
+sudo mv go-cli /usr/local/bin/kubectl-declan
 ```
 
 ## Usage
